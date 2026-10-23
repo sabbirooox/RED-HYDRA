@@ -41,12 +41,13 @@ def clear_screen():
 def show_banner():
     clear_screen()
     print(Fore.RED + "==================================================")
-    # সাধারণ ফন্টে বড় করে সাজানো (কোনো ভাঙা ব্লক নেই)
-    print(Fore.RED + Style.BRIGHT + "  RRRR   EEEEE  DDDD      H   H  Y   Y  DDDD   RRRR    A   ")
-    print(Fore.RED + Style.BRIGHT + "  R   R  E      D   D     H   H   Y Y   D   D  R   R  A   A ")
-    print(Fore.RED + Style.BRIGHT + "  RRRR   EEEE   D   D     HHHHH    Y    D   D  RRRR  AAAAA ")
-    print(Fore.RED + Style.BRIGHT + "  R R    E      D   D     H   H    Y    D   D  R R   A   A ")
-    print(Fore.RED + Style.BRIGHT + "  R  RR  EEEEE  DDDD      H   H    Y    DDDD   R  RR A   A ")
+    # মিডিয়াম মোটা এবং পরিষ্কার স্টাইল
+    print(Fore.RED + Style.BRIGHT + "  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗██████╗ ██████╗  █████╗ ")
+    print(Fore.RED + Style.BRIGHT + "  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗")
+    print(Fore.RED + Style.BRIGHT + "  ██████╔╝█████╗  ██║  ██║    ███████║ ╚████╔╝ ██║  ██║██████╔╝███████║")
+    print(Fore.RED + Style.BRIGHT + "  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║  ╚██╔╝  ██║  ██║██╔══██╗██╔══██║")
+    print(Fore.RED + Style.BRIGHT + "  ██║  ██║███████╗██████╔╝    ██║  ██║   ██║   ██████╔╝██║  ██║██║  ██║")
+    print(Fore.RED + Style.BRIGHT + "  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝")
     print(Fore.RED + "==================================================")
     print(Fore.MAGENTA + Style.BRIGHT + "            DEVELOPER BY SABBIR ØX ☠️")
     print(Fore.RED + "==================================================")
@@ -82,7 +83,7 @@ def auto_attack(url, username, limit):
         count += 1
         sys.stdout.write(f"\r{Fore.RED}[*] Trying: {pwd[:15]:<15} | Progress: {count}/{limit}")
         sys.stdout.flush()
-        
+
         if attempt_login(url, username, pwd):
             print("\n\n" + Fore.GREEN + Style.BRIGHT + f"[✓] SUCCESS! Password Found: {pwd}")
             print(Fore.GREEN + f"[*] Username: {username}")
@@ -94,11 +95,11 @@ def manual_attack(url, username):
     print(Fore.YELLOW + f"\n[*] Starting MANUAL ATTACK on: {url}")
     file_name = input(Fore.CYAN + "Enter Wordlist File Name (e.g., pass.txt): ").strip()
     file_path = f"/sdcard/Download/{file_name}"
-    
+
     if not os.path.exists(file_path):
         print(Fore.RED + f"\n[!] File not found in Download folder: {file_name}")
         return
-        
+
     print(Fore.CYAN + f"[*] Loading Wordlist: {file_path}\n")
     try:
         with open(file_path, 'r') as f:
@@ -117,16 +118,16 @@ def manual_attack(url, username):
 def main():
     target_url = "Not Set"
     target_user = "Not Set"
-    
+
     while True:
         show_banner()
         show_menu()
         print(Fore.CYAN + f"[*] Current Target: {target_url}")
         print(Fore.CYAN + f"[*] Current User  : {target_user}")
         print(Fore.RED + "==================================================")
-        
+
         choice = input(Fore.YELLOW + "\nSelect an option: " + Fore.WHITE)
-        
+
         if choice == '1':
             target_url = input(Fore.CYAN + "Enter Target URL: ").strip()
         elif choice == '2':
