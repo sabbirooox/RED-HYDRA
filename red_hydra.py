@@ -11,7 +11,6 @@ except ImportError:
     from colorama import Fore, Style, init
     init(autoreset=True)
 
-# ১০০০+ কমন পাসওয়ার্ড
 COMMON_PASSWORDS = [
     "123456", "password", "12345678", "qwerty", "123456789", "12345", "1234", "111111",
     "1234567", "dragon", "123123", "baseball", "abc123", "football", "monkey", "letmein",
@@ -41,7 +40,6 @@ def clear_screen():
 def show_banner():
     clear_screen()
     print(Fore.RED + "==================================================")
-    # মিডিয়াম সাইজে স্টাইল করা নাম
     print(Fore.RED + Style.BRIGHT + "  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗██████╗ ██████╗  █████╗ ")
     print(Fore.RED + Style.BRIGHT + "  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗")
     print(Fore.RED + Style.BRIGHT + "  ██████╔╝█████╗  ██║  ██║    ███████║ ╚████╔╝ ██║  ██║██████╔╝███████║")
