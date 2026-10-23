@@ -11,6 +11,7 @@ except ImportError:
     from colorama import Fore, Style, init
     init(autoreset=True)
 
+# ১০০০+ কমন পাসওয়ার্ড
 COMMON_PASSWORDS = [
     "123456", "password", "12345678", "qwerty", "123456789", "12345", "1234", "111111",
     "1234567", "dragon", "123123", "baseball", "abc123", "football", "monkey", "letmein",
@@ -40,12 +41,12 @@ def clear_screen():
 def show_banner():
     clear_screen()
     print(Fore.RED + "==================================================")
-    print(Fore.RED + Style.BRIGHT + "  ██████╗ ███████╗██████╗     ██╗  ██╗██╗   ██╗██████╗ ██████╗  █████╗ ")
-    print(Fore.RED + Style.BRIGHT + "  ██╔══██╗██╔════╝██╔══██╗    ██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗")
-    print(Fore.RED + Style.BRIGHT + "  ██████╔╝█████╗  ██║  ██║    ███████║ ╚████╔╝ ██║  ██║██████╔╝███████║")
-    print(Fore.RED + Style.BRIGHT + "  ██╔══██╗██╔══╝  ██║  ██║    ██╔══██║  ╚██╔╝  ██║  ██║██╔══██╗██╔══██║")
-    print(Fore.RED + Style.BRIGHT + "  ██║  ██║███████╗██████╔╝    ██║  ██║   ██║   ██████╔╝██║  ██║██║  ██║")
-    print(Fore.RED + Style.BRIGHT + "  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝")
+    # সাধারণ ফন্টে বড় করে সাজানো (কোনো ভাঙা ব্লক নেই)
+    print(Fore.RED + Style.BRIGHT + "  RRRR   EEEEE  DDDD      H   H  Y   Y  DDDD   RRRR    A   ")
+    print(Fore.RED + Style.BRIGHT + "  R   R  E      D   D     H   H   Y Y   D   D  R   R  A   A ")
+    print(Fore.RED + Style.BRIGHT + "  RRRR   EEEE   D   D     HHHHH    Y    D   D  RRRR  AAAAA ")
+    print(Fore.RED + Style.BRIGHT + "  R R    E      D   D     H   H    Y    D   D  R R   A   A ")
+    print(Fore.RED + Style.BRIGHT + "  R  RR  EEEEE  DDDD      H   H    Y    DDDD   R  RR A   A ")
     print(Fore.RED + "==================================================")
     print(Fore.MAGENTA + Style.BRIGHT + "            DEVELOPER BY SABBIR ØX ☠️")
     print(Fore.RED + "==================================================")
