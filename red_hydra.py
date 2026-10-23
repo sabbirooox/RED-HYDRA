@@ -11,7 +11,6 @@ except ImportError:
     from colorama import Fore, Style, init
     init(autoreset=True)
 
-# ১০০০+ কমন পাসওয়ার্ডের লিস্ট
 COMMON_PASSWORDS = [
     "123456", "password", "12345678", "qwerty", "123456789", "12345", "1234", "111111",
     "1234567", "dragon", "123123", "baseball", "abc123", "football", "monkey", "letmein",
@@ -25,42 +24,9 @@ COMMON_PASSWORDS = [
     "aaaaaa", "ginger", "princess", "joshua", "cheese", "amanda", "summer", "love",
     "ashley", "6969", "nicole", "chelsea", "biteme", "matthew", "access", "yankees",
     "987654321", "dallas", "austin", "thunder", "taylor", "matrix", "admin", "root",
-    "admin123", "admin1", "password1", "password123", "welcome", "welcome1", "test", "test123",
-    "12341234", "12344321", "qwerty123", "1q2w3e4r", "1q2w3e", "qwertyui", "asdfghjkl",
-    "zxcvbnm,", "poiuytrewq", "lkjhgfdsa", "mnbvcxz", "0987654321", "0123456789",
-    "qazwsxedc", "wsxedcrfv", "edcrfvtgb", "rfvtgbyhn", "tgbnhyujm", "yhnujmik,",
-    "iloveyou1", "iloveyou2", "iloveyou3", "princess1", "princess2", "princess3",
-    "sunshine1", "sunshine2", "sunshine3", "football1", "football2", "football3",
-    "baseball1", "baseball2", "baseball3", "monkey1", "monkey2", "monkey3",
-    "dragon1", "dragon2", "dragon3", "master1", "master2", "master3",
-    "shadow1", "shadow2", "shadow3", "superman1", "superman2", "superman3",
-    "batman1", "batman2", "batman3", "starwars1", "starwars2", "starwars3",
-    "michael1", "michael2", "michael3", "jennifer1", "jennifer2", "jennifer3",
-    "jordan1", "jordan2", "jordan3", "andrew1", "andrew2", "andrew3",
-    "charlie1", "charlie2", "charlie3", "robert1", "robert2", "robert3",
-    "thomas1", "thomas2", "thomas3", "daniel1", "daniel2", "daniel3",
-    "matthew1", "matthew2", "matthew3", "joshua1", "joshua2", "joshua3",
-    "michelle1", "michelle2", "michelle3", "jessica1", "jessica2", "jessica3",
-    "ashley1", "ashley2", "ashley3", "amanda1", "amanda2", "amanda3",
-    "nicole1", "nicole2", "nicole3", "chelsea1", "chelsea2", "chelsea3",
-    "biteme1", "biteme2", "biteme3", "access1", "access2", "access3",
-    "yankees1", "yankees2", "yankees3", "dallas1", "dallas2", "dallas3",
-    "austin1", "austin2", "austin3", "thunder1", "thunder2", "thunder3",
-    "taylor1", "taylor2", "taylor3", "matrix1", "matrix2", "matrix3",
-    "admin1234", "admin12345", "admin123456", "adminadmin", "adminadmin1",
-    "password1234", "password12345", "password123456", "passwordpassword",
-    "testtest", "testtest1", "testtest2", "test1234", "test12345", "test123456",
-    "welcome123", "welcome1234", "welcome12345", "welcomewelcome",
-    "qwerty1234", "qwerty12345", "qwerty123456", "qwertyqwerty",
-    "1234567890", "0987654321", "1234554321", "1122334455", "5566778899",
-    "abcdefgh", "abcdefgh1", "abcdefgh2", "abcdefgh3", "abcdefgh4",
-    "qwertyui", "qwertyui1", "qwertyui2", "qwertyui3", "qwertyui4",
-    "asdfghjk", "asdfghjk1", "asdfghjk2", "asdfghjk3", "asdfghjk4",
-    "zxcvbnml", "zxcvbnml1", "zxcvbnml2", "zxcvbnml3", "zxcvbnml4",
-    "iloveyou123", "iloveyou1234", "iloveyou12345", "iloveyouiloveyou"
+    "admin123", "admin1", "password1", "password123", "welcome", "welcome1", "test", "test123"
 ]
 
-# বাকি পাসওয়ার্ড অটোমেটিক যোগ করা হবে যাতে ১০০০+ পূর্ণ হয়
 for i in range(800):
     COMMON_PASSWORDS.append(f"pass{i}123")
     COMMON_PASSWORDS.append(f"admin{i}123")
